@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    margin: 0;
+}
+
+.titulo {
+    text-align: center;
+    font-family: Caveat;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+button {
+    padding: 10px; /* Ajusta el tamaño de los botones según sea necesario */
+    font-size: 16px; /* Ajusta el tamaño del texto de los botones según sea necesario */
+    margin: 5px; /* Ajusta el espacio entre los botones según sea necesario */
+    font-family: Piedra;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.bebida {
+    margin-right: auto;
+    margin-left: 0;
+}
+
+.cantidad {
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.btn-delete {
+    padding: 5px; /* Ajusta el tamaño del botón "X" según sea necesario */
+    font-weight: bold;
+    margin-right: 0; /* Elimina el margen derecho del botón "X" */
+    margin-left: 0; /* Ajusta el margen izquierdo del botón "X" */
+}
