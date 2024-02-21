@@ -29,10 +29,13 @@ h1 {
     background-color: #f1f1f1;
     text-align: center;
     padding: 10px 0;
+    display: flex;
+    justify-content: space-between; /* Alinea los elementos al principio y al final del contenedor */
 }
 
 #resetear-btn {
-    font-size: 1em; /* Ajusta el tamaño del botón Reset */
+    font-size: 0.8em; /* Ajusta el tamaño del botón Reset */
+    margin-right: auto; /* Mueve el botón Reset hacia la izquierda */
 }
 
 
@@ -48,7 +51,7 @@ h1 {
 
 .footer button#confirmar-btn {
     flex-shrink: 0; /* Evita que el botón se estire */
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: bold;
 }
 
@@ -109,6 +112,11 @@ h1 {
     text-decoration: none;
     cursor: pointer;
 }
+
+#bebida-input {
+    font-size: 1em; /* Ajusta el tamaño del campo de ingreso de bebida */
+}
+
 
 
 
