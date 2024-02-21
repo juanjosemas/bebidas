@@ -31,6 +31,11 @@ h1 {
     padding: 10px 0;
 }
 
+#resetear-btn {
+    font-size: 1em; /* Ajusta el tamaño del botón Reset */
+}
+
+
 .footer button {
     margin: 0 10px; /* Aumenta el espacio entre los botones */
 }
