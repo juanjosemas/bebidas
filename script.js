@@ -6,6 +6,11 @@ document.addEventListener("DOMContentLoaded", function() {
     const confirmarBtn = document.getElementById("confirmar-btn");
     const closeBtn = document.getElementsByClassName("close")[0];
 
+    // Agregamos el evento de clic al botón "Reset"
+    resetearBtn.addEventListener("click", function() {
+        bebidasLista.innerHTML = ""; // Elimina todos los elementos de la lista de bebidas
+    });
+
     confirmarBtn.addEventListener("click", function() {
         const bebidaNombre = bebidaInput.value.trim();
         if (bebidaNombre) {
@@ -61,4 +66,5 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Resto del código...
 });
+
 
