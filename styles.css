@@ -58,7 +58,7 @@ h1 {
 
 .footer button#confirmar-btn {
     flex-shrink: 0; /* Evita que el botón se estire */
-    font-size: 1.2em;
+    font-size: 1.0em;
     font-weight: bold;
 }
 
