@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const bebidaInput = document.getElementById("bebida-input");
     const confirmarBtn = document.getElementById("confirmar-btn");
     const closeBtn = document.getElementsByClassName("close")[0];
+    const menuBtn = document.querySelector(".menu-btn");
+    const menu = document.getElementById("menu");
 
     // Agregamos el evento de clic al botón "Reset"
     resetearBtn.addEventListener("click", function() {
@@ -64,5 +66,16 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-    // Resto del código...
+    // Evento de clic para mostrar/ocultar el menú
+    menuBtn.addEventListener("click", function() {
+        menu.classList.toggle("show-menu");
+    });
+    
+    document.addEventListener("click", function(event) {
+    if (!menu.contains(event.target) && !menuBtn.contains(event.target)) {
+        menu.classList.remove("show-menu");
+    }
+});
+
+
 });
