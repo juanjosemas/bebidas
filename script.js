@@ -73,12 +73,10 @@ document.addEventListener("DOMContentLoaded", function() {
             btnRestar.classList.add("btn-restar");
 
             btnDelete.addEventListener("click", function() {
-                bebida.cantidad--;
-                if (bebida.cantidad === 0) {
-                    const index = bebidasPorMesa[currentTable].indexOf(bebida);
-                    if (index !== -1) {
-                        bebidasPorMesa[currentTable].splice(index, 1);
-                    }
+                bebida.cantidad = 0; // Restablecer la cantidad a 0
+                const index = bebidasPorMesa[currentTable].indexOf(bebida);
+                if (index !== -1) {
+                    bebidasPorMesa[currentTable].splice(index, 1);
                 }
                 actualizarListaBebidas();
             });
@@ -89,14 +87,10 @@ document.addEventListener("DOMContentLoaded", function() {
             });
 
             btnRestar.addEventListener("click", function() {
-                bebida.cantidad--;
-                if (bebida.cantidad === 0) {
-                    const index = bebidasPorMesa[currentTable].indexOf(bebida);
-                    if (index !== -1) {
-                        bebidasPorMesa[currentTable].splice(index, 1);
-                    }
+                if (bebida.cantidad > 0) {
+                    bebida.cantidad--;
+                    actualizarListaBebidas();
                 }
-                actualizarListaBebidas();
             });
 
             li.appendChild(btnDelete);
