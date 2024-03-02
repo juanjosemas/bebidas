@@ -24,6 +24,7 @@ h1 {
 }
 
 #bebidas-lista {
+    margin-top: 2px; /* Ajusta el margen superior para acercar la lista al titulo */
     list-style-type: none;
     padding: 0;
     font-family: Piedra;
